@@ -1,0 +1,9 @@
+{
+  "name": "Ktor Kotlin Docker Dev",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "./gradlew build"
+}
